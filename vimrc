@@ -12,6 +12,7 @@ retab
 
 command! Status echo "All systems are go!"
 
+
 let ropevim_extended_complete=1
 
 let g:ropevim_autoimport_modules = ["os", "shutil"]
