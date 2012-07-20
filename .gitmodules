@@ -5,3 +5,12 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/zoom"]
+	path = bundle/zoom
+	url = https://github.com/vim-scripts/zoom.vim.git
+[submodule "bundle/verilog-constructs"]
+	path = bundle/verilog-constructs
+	url = https://github.com/vim-scripts/Verilog-constructs-plugin.git
