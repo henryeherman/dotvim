@@ -8,7 +8,12 @@ endif
 set cindent
 set number
 set expandtab
+set sw=4
+
+
 retab
+
+autocmd FileType make setlocal noexpandtab
 
 colorscheme desert
 
@@ -38,3 +43,9 @@ augroup END
 autocmd BufRead,BufNewFile *.v,*.vh setfiletype verilog
 autocmd BufRead,BufNewFile *.v,*.vh set expandtab tabstop=4 softtabstop=2 shiftwidth=2
 autocmd BufRead,BufNewFile *.sv,*.svi set 
+
+autocmd FileType C set tabstop=4|set shiftwidth=2|set expandtab
+
+
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
